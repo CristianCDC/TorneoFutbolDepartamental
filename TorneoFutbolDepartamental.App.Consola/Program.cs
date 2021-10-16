@@ -1,7 +1,6 @@
 ﻿using System;
 using TorneoFutbolDepartamental.App.Dominio;
 using TorneoFutbolDepartamental.App.Persistencia;
-
 namespace TorneoFutbolDepartamental.App.Consola
 {
     class Program
