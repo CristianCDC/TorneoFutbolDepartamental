@@ -76,5 +76,10 @@ namespace TorneoFutbolDepartamental.App.Persistencia
             }
             return null;
         }
+
+        IEnumerable<Estadio> IRepositorioEstadio.SearchEstadios(string nombre)
+        {
+            return _appContext.Estadios.Where(es => es.Nombre.Contains(nombre));
+        }
     }
 }

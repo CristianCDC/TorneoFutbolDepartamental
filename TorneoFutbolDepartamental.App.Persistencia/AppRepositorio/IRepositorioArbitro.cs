@@ -10,11 +10,13 @@ namespace TorneoFutbolDepartamental.App.Persistencia
 
          Arbitro AddArbitro(Arbitro arbitro);
 
-         Arbitro UpdateArbitro(Arbitro arbitro);
+         Arbitro  UpdateArbitro(Arbitro arbitro);
 
          void DeleteArbitro(int Arbitroid);
 
          Arbitro GetArbitro(int Arbitroid);
+
+         IEnumerable<Arbitro> SearchArbitros(string nombre);
 
     }
 }

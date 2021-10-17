@@ -18,5 +18,7 @@ namespace TorneoFutbolDepartamental.App.Persistencia
          DirectorTecnico AsignarDirectorTecnico(int Equipoid,int DirectorTecnicoid);
 
          Municipio AsignarMunicipio(int Equipoid,int Municipioid);
+
+         IEnumerable<Equipo> SearchEquipos(string nombre);
     }
 }

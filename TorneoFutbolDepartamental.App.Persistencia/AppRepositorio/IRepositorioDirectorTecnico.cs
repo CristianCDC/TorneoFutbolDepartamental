@@ -16,5 +16,7 @@ namespace TorneoFutbolDepartamental.App.Persistencia
 
          DirectorTecnico GetDirectorTecnico(int DirectorTecnicoid);
 
+         IEnumerable<DirectorTecnico> SearchDirectoresTecnicos(string nombre);
+
     }
 }

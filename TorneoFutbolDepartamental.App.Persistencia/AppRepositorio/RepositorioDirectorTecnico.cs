@@ -56,5 +56,10 @@ namespace TorneoFutbolDepartamental.App.Persistencia
             }
             return DirectorTecnicoEncontrado;
         }
+
+        IEnumerable<DirectorTecnico> IRepositorioDirectorTecnico.SearchDirectoresTecnicos(string nombre)
+        {
+            return _appContext.DirectoresTecnicos.Where(dt => dt.Nombre.Contains(nombre));
+        }
     }
 }

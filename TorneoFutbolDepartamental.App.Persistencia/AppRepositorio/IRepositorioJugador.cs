@@ -14,5 +14,7 @@ namespace TorneoFutbolDepartamental.App.Persistencia
          void DeleteJugador(int Jugadorid);
 
          Jugador GetJugador(int Jugadorid);
+
+         IEnumerable<Jugador> SearchJugadores(string nombre);
     }
 }

@@ -57,5 +57,10 @@ namespace TorneoFutbolDepartamental.App.Persistencia
             }
             return MunicipioEncontrado;
         }
+
+        IEnumerable<Municipio> IRepositorioMunicipio.SearchMunicipios(string nombre)
+        {
+            return _appContext.Municipios.Where(m => m.Nombre.Contains(nombre));
+        }
     }
 }

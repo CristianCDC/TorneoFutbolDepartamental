@@ -57,5 +57,10 @@ namespace TorneoFutbolDepartamental.App.Persistencia
             }
             return ArbitroEncontrado;
         }
+
+        IEnumerable<Arbitro> IRepositorioArbitro.SearchArbitros(string nombre)
+        {
+            return _appContext.Arbitros.Where(a => a.Nombre.Contains(nombre));
+        }
     }
 }
